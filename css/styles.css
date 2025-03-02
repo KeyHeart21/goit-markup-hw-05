@@ -592,8 +592,7 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: all;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -612,11 +611,13 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 67px 24px 29px 24px;
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
-    border-radius: 100%;
+    border-radius: 50%;
     width: 24px;
     height: 24px;
     padding: 0%;
@@ -624,19 +625,24 @@ button {
     line-height: 0;
     fill: #2e2f42;
     background-color: #e7e9fc;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color, fill;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     right: 24px;
-    top: 19px;
-    display: inline-block;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.close-button-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .close-button:hover,
 .close-button:focus {
     fill: #FFF;
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-text {
@@ -652,6 +658,7 @@ button {
 .modal-input {
     width: 360px;
     height: 58px;
+    background-color: transparent;
 }
 
 .modal-container-block {
@@ -693,6 +700,7 @@ button {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus+.modal-form-icon {
@@ -757,7 +765,7 @@ button {
 } */
 
 .modal-checkbox:checked+.modal-checkbox-label .custom-checkbox {
-    background-color: #4d5ae5;
+    background-color: #404bbf;
     fill: #f4f4fd;
     border: 0;
 
@@ -775,4 +783,8 @@ button {
 
 .modal-link {
     color: #4d5ae5;
+}
+
+.modal-textarea-container {
+    margin-bottom: 16px;
 }
