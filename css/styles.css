@@ -576,7 +576,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 16px;
+
 
 }
 
@@ -588,7 +588,7 @@ button {
     height: 40px;
     background-color: transparent;
     padding-left: 16px;
-    margin-top: 16px;
+
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
@@ -862,4 +862,8 @@ button {
 
 .modal-textarea-container {
     margin-bottom: 16px;
+}
+
+.send-btn {
+    margin-top: 24px;
 }
