@@ -26,6 +26,11 @@
           <a class="header-logo" href="./index.html"
             >Web<span class="logo-item">Studio</span></a
           >
+          <button type="button" class="btn-mobile">
+            <svg class="btn-mob-icon" width="16" height="14">
+              <use href="./images/icons.svg#group"></use>
+            </svg>
+          </button>
           <ul class="header-list">
             <li class="header-list-item">
               <a class="header-item-link current" href="./index.html">Studio</a>
@@ -71,7 +76,7 @@
           <ul class="benefits-list">
             <li class="benefits-list-item">
               <div class="upper-section">
-                <svg width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -83,7 +88,7 @@
             </li>
             <li class="benefits-list-item">
               <div class="upper-section">
-                <svg width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </div>
@@ -95,7 +100,7 @@
             </li>
             <li class="benefits-list-item">
               <div class="upper-section">
-                <svg width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-vector-1"></use>
                 </svg>
               </div>
@@ -107,7 +112,7 @@
             </li>
             <li class="benefits-list-item">
               <div class="upper-section">
-                <svg width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-group"></use>
                 </svg>
               </div>
@@ -123,7 +128,7 @@
       <!-- #endregion Benefits -->
 
       <!-- #region people     -->
-      <section class="people" id="Portfolio">
+      <section class="people visually-hidden" id="Portfolio">
         <div class="container">
           <h2 class="people-title">Our Team</h2>
           <ul class="people-list">
@@ -309,7 +314,7 @@
       <!-- #endregion people -->
 
       <!-- #region Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio visually-hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -438,7 +443,7 @@
       </section>
       <!-- #endregion Portfolio -->
     </main>
-    <footer class="footer">
+    <footer class="footer visually-hidden">
       <div class="container footer-container">
         <div class="logo-container">
           <a class="footer-logo" href="./index.html"
@@ -504,7 +509,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-opn">
+    <!-- #region backdrop -->
+    <div class="backdrop visually-hidden is-opn">
       <div class="modal">
         <button class="close-button" type="button">
           <svg class="close-button-icon" width="8" height="8">
@@ -590,5 +596,73 @@
         </form>
       </div>
     </div>
+    <!-- #endregion backdrop -->
+    <!-- #region mobile-menu -->
+    <div class="mobile-menu is-ope">
+      <button type="button" class="close-button">
+        <svg class="close-button-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-header-list">
+        <li class="mob-header-list-item">
+          <a class="mob-header-item-link currents" href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="mob-header-list-item">
+          <a class="mob-header-item-link" href="">Portfolio</a>
+        </li>
+        <li class="mob-header-list-item">
+          <a class="mob-header-item-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="mob-header-adr">
+        <ul class="mob-header-adr-list">
+          <li class="mob-header-adr-list-item">
+            <a class="mob-header-adr-list-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mob-header-adr-list-item">
+            <a class="mob-header-adr-list-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mob-footer-icon-list">
+        <li class="footer-icon-list-item">
+          <a class="footer-icon-social-link" href="">
+            <svg class="footer-icon-media" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-list-item">
+          <a class="footer-icon-social-link" href="">
+            <svg class="footer-icon-media" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-list-item">
+          <a class="footer-icon-social-link" href="">
+            <svg class="footer-icon-media" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-list-item">
+          <a class="footer-icon-social-link" href="">
+            <svg class="footer-icon-media" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- #endregion mobile-menu -->
   </body>
 </html>
